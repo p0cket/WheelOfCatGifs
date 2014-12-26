@@ -1,1 +1,9 @@
 /*There will be some awesome cat css here eventually. Brace yourselves.*/
+
+#navStuff {
+	color: blue;
+	padding: 15px 10px;
+	font-size: 11;
+	font-weight: bold;
+	display: inline;
+}
