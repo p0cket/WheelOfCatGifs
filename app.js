@@ -11,8 +11,8 @@ app.get('/', function (req, res) {
 app.get('/thecatgif', function(req,res) {
 	var theCatGif = req.params.theCatGif;
 	//generate a new random cat gif
-	var newCatGif = catGifs(Math.floor(Math.random() * catGifs.length + 1));
-	res.send(theCatGif[newCatGif]);
+	var newCatGif = catGifs[Math.floor(Math.random() * catGifs.length + 1)];
+	res.send(newCatGif);
 })
 
 // app.get('/answer/:chosenAnswer', function(req, res) {

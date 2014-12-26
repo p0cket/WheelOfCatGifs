@@ -9,7 +9,8 @@ function getCats(i) {
 }
 
 function showNewCats(newCats) {
-	document.getElementById("mainGif").src = encodeURIComponent("newCats");
+	document.getElementById("mainGif").src = newCats;
+//  document.getElementById("mainGif").src = encodeURIComponent("newCats");
 	console.log("you showed a new cat gif");
 }
 
