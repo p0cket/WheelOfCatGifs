@@ -41,6 +41,5 @@ function requestNewCatGifs() {
 // }
 
 window.onload = function() {
-	var theCatGif = document.getElementById("mainGif").src = encodeURIComponent("http://i427.photobucket.com/albums/pp355/NyackBosco/music/dj-cat.gif");
-	getCats();
+	var theCatGif = document.getElementById("mainGif").src = "http://i427.photobucket.com/albums/pp355/NyackBosco/music/dj-cat.gif";
 }
