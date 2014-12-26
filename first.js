@@ -1,5 +1,3 @@
-var theCatGif = document.getElementById("mainGif").src = encodeURIComponent("http://i427.photobucket.com/albums/pp355/NyackBosco/music/dj-cat.gif");
-
 function getCats(i) {
 	if (theCatGif == false){
 	}
@@ -15,7 +13,7 @@ function showNewCats(newCats) {
 	console.log("you showed a new cat gif");
 }
 
-function sendAnswerToServer() {
+function requestNewCatGifs() {
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET", "/thecatgif", true);
 	xhr.onreadystatechange = function() {
@@ -43,5 +41,6 @@ function sendAnswerToServer() {
 // }
 
 window.onload = function() {
-	getCats( a random cat );
+	var theCatGif = document.getElementById("mainGif").src = encodeURIComponent("http://i427.photobucket.com/albums/pp355/NyackBosco/music/dj-cat.gif");
+	getCats();
 }
