@@ -1,6 +1,5 @@
 var express = require('express')
 var app = express()
-
 var catGifs = ["http://i427.photobucket.com/albums/pp355/NyackBosco/music/dj-cat.gif", "http://i465.photobucket.com/albums/rr14/themishkin/GIFs/party-fails-party-hard-weekend-cats-1.gif",];
 
 app.use(express.static(__dirname));
@@ -11,7 +10,9 @@ app.get('/', function (req, res) {
 app.get('/thecatgif', function(req,res) {
 	var theCatGif = req.params.theCatGif;
 	//generate a new random cat gif
-	var newCatGif = catGifs[Math.floor(Math.random() * catGifs.length + 1)];
+	var randomNum = Math.floor(Math.random() * catGifs.length);
+	console.log(randomNum);
+	var newCatGif = catGifs[randomNum];
 	res.send(newCatGif);
 })
 
